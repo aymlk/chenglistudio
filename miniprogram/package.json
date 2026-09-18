@@ -1,0 +1,51 @@
+{
+  "name": "photography-mini",
+  "version": "1.0.0",
+  "private": true,
+  "description": "橙梨影视婚礼影像工作室 · 微信小程序（Taro 改造）",
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "sass",
+    "framework": "react"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build:weapp": "npm run check && taro build --type weapp",
+    "dev:weapp": "taro build --type weapp --watch"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.24.0",
+    "@tarojs/components": "^4.0.0",
+    "@tarojs/helper": "^4.0.0",
+    "@tarojs/plugin-framework-react": "^4.0.0",
+    "@tarojs/plugin-platform-weapp": "^4.0.0",
+    "@tarojs/react": "^4.0.0",
+    "@tarojs/runtime": "^4.0.0",
+    "@tarojs/shared": "^4.0.0",
+    "@tarojs/taro": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-react": "^7.24.0",
+    "@tarojs/cli": "^4.0.0",
+    "@tarojs/taro-loader": "^4.0.0",
+    "@tarojs/webpack5-runner": "^4.0.0",
+    "webpack": "5.91.0",
+    "@types/react": "^18.0.0",
+    "@types/webpack-env": "^1.18.0",
+    "babel-preset-taro": "^4.0.0",
+    "react-refresh": "^0.14.0",
+    "typescript": "^5.1.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0"
+  }
+}

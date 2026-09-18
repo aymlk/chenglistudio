@@ -1,0 +1,23 @@
+{
+  "miniprogramRoot": "dist/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "projectname": "摄影小程序极简版",
+  "description": "橙梨影视婚礼影像工作室 · Taro 小程序",
+  "appid": "wx86a1b71fce076063",
+  "setting": {
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "urlCheck": false,
+    "enhance": true,
+    "packNpmRelationList": [],
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.17.2",
+  "editorSetting": {}
+}

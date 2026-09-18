@@ -1,0 +1,9 @@
+{
+  "name": "seedWorks",
+  "version": "1.0.0",
+  "description": "把内置静态作品批量导入云端（已存在则跳过）",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}

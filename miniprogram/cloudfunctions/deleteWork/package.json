@@ -1,0 +1,9 @@
+{
+  "name": "deleteWork",
+  "version": "1.0.0",
+  "description": "校验管理员 openid 后删除 works 集合中的作品",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}

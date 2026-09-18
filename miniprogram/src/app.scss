@@ -1,0 +1,62 @@
+@import './styles/tailwind-compat.scss';
+
+page {
+  background-color: #000000;
+  color: #e1e0cc;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* WXSS 不支持 * 通配选择器，枚举常用元素替代 */
+page,
+view,
+text,
+image,
+scroll-view,
+input,
+textarea,
+button,
+navigator,
+swiper,
+swiper-item {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC',
+    'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+  box-sizing: border-box;
+}
+
+/* 胶片噪点 —— 覆盖在 Hero 视频/图片之上，营造颗粒感 */
+.noise-overlay {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgMjAwJz48ZmlsdGVyIGlkPSduJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC44NScgbnVtT2N0YXZlcz0nMycgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNuKScvPjwvc3ZnPg==");
+  background-repeat: repeat;
+  background-size: 180px 180px;
+}
+
+/* 各区域的微弱背景颗粒 */
+.bg-noise {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMDAgMjAwJz48ZmlsdGVyIGlkPSduMic+PGZlVHVyYnVsZW5jZSB0eXBlPSdmcmFjdGFsTm9pc2UnIGJhc2VGcmVxdWVuY3k9JzAuOScgbnVtT2N0YXZlcz0nNCcgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPjwvZmlsdGVyPjxyZWN0IHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnIGZpbHRlcj0ndXJsKCNuMiknLz48L3N2Zz4=");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+}
+
+.noise-overlay,
+.bg-noise {
+  pointer-events: none;
+}
+
+/* 隐藏滚动条 —— 用于 snap-scroll 横向/纵向浏览 */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* 文本省略 */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 入场动画：默认隐藏，appear 后由 JS 切到可见态 */
+.fade-init {
+  opacity: 0;
+}
